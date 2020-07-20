@@ -1,6 +1,6 @@
 getJSON.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open('get', '/5.json')
+    request.open('get', '5.json')
     request.onreadystatechange = () => {
         if (request.readyState === 4) {
             if (request.status >= 200 && request.status < 400) {
@@ -15,7 +15,7 @@ getJSON.onclick = () => {
 
 getXML.onclick = () => {
     const request = new XMLHttpRequest();
-    request.open('get', '/4.xml');
+    request.open('get', '4.xml');
     request.onreadystatechange = () => {
         if (request.readyState === 4) {
             if (request.status >= 200 && request.status < 300) {
@@ -29,7 +29,7 @@ getXML.onclick = () => {
 }
 getCss.onclick = () => {
     const request = new XMLHttpRequest();
-    request.open('GET', '/style.css');
+    request.open('GET', 'style.css');
     request.onload = () => {
         const style = document.createElement('style')
         style.innerHTML = request.response
@@ -44,7 +44,7 @@ getCss.onclick = () => {
 
 getJS.onclick = () => {
     const request = new XMLHttpRequest();
-    request.open('get', '/2.js');
+    request.open('get', '2.js');
     request.onload = () => {
         const script = document.createElement('script')
         script.innerHTML = request.response
@@ -56,7 +56,7 @@ getJS.onclick = () => {
 
 getHTML.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open('get', '/3.html')
+    request.open('get', '3.html')
     request.onreadystatechange = () => {
         if (request.readyState === 4)
             if (request.status >= 200 && request.status < 300) {
